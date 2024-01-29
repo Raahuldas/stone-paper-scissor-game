@@ -8,7 +8,7 @@
     <title>stone paper scissor</title>
 </head>
 
-<body>
+<body onload="start()">
     <div class="score">
         <div class="score-row">Game Won : <div id="win">0</div></div>
         <div class="score-row">Game lose : <div id="lose">0</div></div>
@@ -27,7 +27,10 @@
             <button type="button" id="btn3" class="btn" onclick="scissor()">scissor</button>
         </div>
     </div>
-    <script src="game.js"></script>
+    <div class="reset">
+        <button class="reset-button" onclick="rst()">RESET</button>
+    </div>
+    <script src="jsgame.js"></script>
 </body>
 
 </html>
